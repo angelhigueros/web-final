@@ -13,6 +13,7 @@ function Menu() {
           <li><a href="#about">Sobre mi</a></li>
           <li><a href="#skills">Mis habilidades</a></li>
           <li><a href="#work">Mi trabajo</a></li>
+          <li><a href="#contact">Contacto</a></li>
         </ul>
       </div>
 

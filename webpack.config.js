@@ -43,6 +43,26 @@ module.exports = {
         test: /.(img|png|jpe?g|gif)$/,
         loader: 'file-loader',
       },
+      {
+        test: /\.s?css$/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
+        ],
+      },
     ],
   },
   optimization: {},

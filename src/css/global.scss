@@ -117,10 +117,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction:column;
+  flex-direction: column;
   color: #fff;
 }
-
 
 .about-columns {
   display: flex;
@@ -145,11 +144,10 @@ body {
   color: #dc3545;
 }
 
-.about-col-item h3, .about-container h1 {
+.about-col-item h3,
+.about-container h1 {
   color: #20c997;
 }
-
-
 
 /* SKILLS */
 
@@ -161,7 +159,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction:column;
+  flex-direction: column;
   color: #000;
 }
 
@@ -187,11 +185,10 @@ body {
   color: #374d66;
 }
 
-.skills-col-item h3, .skills-container h1 {
+.skills-col-item h3,
+.skills-container h1 {
   color: #20c997;
 }
-
-
 
 /* WORK */
 
@@ -202,10 +199,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction:column;
+  flex-direction: column;
   color: #fff;
 }
-
 
 .work-item {
   margin: 5px;
@@ -236,4 +232,54 @@ body {
   justify-content: center;
   align-items: center;
   overflow: auto;
+}
+
+//
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+  background: rgb(30, 30, 40);
+}
+form {
+  max-width: 420px;
+  margin: 50px auto;
+}
+
+.contact-input {
+  color: white;
+  font-size: 18px;
+  background-color: transparent;
+  border: 2px solid #cc6666;
+  padding: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.contact-input:focus {
+  border: 2px solid #cc4949;
+}
+
+.contact-button {
+  background: #cc4949;
+  border: 0;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 0;
+  font-size: 30px;
+  color: white;
+}
+
+
+
+.contact-container {
+  background-color: #ffff;
+  height: 100vh;
+  width: 100%;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #000;
 }

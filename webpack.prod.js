@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebPack = require('html-webpack-plugin');
+// eslint-disable-next-line import/no-extraneous-dependencies
 const MiniCssExtract = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
@@ -56,6 +57,26 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.s?css$/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
+        ],
+      },
     ],
   },
   optimization: {
@@ -64,7 +85,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPack({
-      title: 'Lab 8 - React JS',
+      title: 'Proyecto - React JS',
       filename: 'index.html',
       template: './src/index.html',
     }),
